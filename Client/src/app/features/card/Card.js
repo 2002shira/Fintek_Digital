@@ -48,7 +48,7 @@ const Card = () => {
                 <div className="hourly-forecast">
                     {data.hourlyForecast.map((hour, index) => (
                         <div className="hour" key={index}>
-                            <p className="hour-time">{hour.time.split(' ')[1]}</p> {/* Extracting the time */}
+                            <p className="hour-time">{hour.time.split(' ')[1]}</p> 
                             <p className="hour-temp">{Math.round(hour.temp_c)}°C</p>
                         </div>
                     ))}

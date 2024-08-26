@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 let initialState = {
-    cityName: '',             // Name of the city entered by the user
-    country: '',              // Country of the city
-    // date: '',                 // Current date in the city
-    timezone: '',             // Timezone of the city
-    temperature: null,        // Current temperature in the city
-    weatherCondition: '',     // Current weather condition (e.g., sunny, windy, etc.)
-    precipitation: '',        // Precipitation value (e.g., "0mm")
-    humidity: '',             // Humidity value (e.g., "50%")
-    wind: '',                 // Wind speed (e.g., "30 km/h")
-    hourlyForecast: [],       // Array of weather data for the next 5 hours
+    cityName: '',             
+    country: '',              
+    // date: '',              
+    timezone: '',             
+    temperature: null,        
+    weatherCondition: '',     
+    precipitation: '',        
+    humidity: '',             
+    wind: '',                 
+    hourlyForecast: [],       
 };
 
 export const weatherReducer = createSlice({

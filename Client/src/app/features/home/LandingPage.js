@@ -10,14 +10,7 @@ export const LandingPage = ({ onButtonClick }) => {
     };
     let imgSrc="./landingImage.png"
     return (
-        <div className="landing-container" style={{
-            // backgroundImage: `url(${imgSrc})`,
-            // backgroundSize: 'cover', // Ensure the image covers the container
-            // backgroundPosition: 'center', // Center the image
-            // backgroundRepeat: 'no-repeat', // Avoid repeating the image
-            // height: '100vh', // Full viewport height
-            // width: '100vw' // Full viewport width
-        }}>
+        <div className="landing-container" >
                 <h1>WeatherVista</h1>
                 <h2>Experience the perfect weather, no matter where life takes you.</h2>
                 <button onClick={handleButtonClick} className="weather-finder-button">
