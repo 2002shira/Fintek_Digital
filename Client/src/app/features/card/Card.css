@@ -1,0 +1,149 @@
+.innerSquare {
+    font-family: 'Heboo', sans-serif;
+}
+
+.outerSquare {
+    width: 450px;
+    height: 450px;
+    background-color: #DDE4E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.innerSquare {
+    width: 310px;
+    height: 355px;
+    background-color: #27737D;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.location {
+    text-align: center;
+}
+
+.location h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.location p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.date-time {
+    font-size: 12px;
+    color: #d0d0d0;
+}
+
+.weather {
+    text-align: center;
+}
+
+.temperature {
+    margin: 10px 0 5px 0;
+    font-size: 36px;
+}
+
+.condition {
+    margin: 0;
+    font-size: 16px;
+    color: #d0d0d0;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.detail {
+    text-align: center;
+}
+
+.label {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.value {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.hour {
+    text-align: center;
+    flex: 1;
+}
+
+.hour + .hour {
+    margin-left: 5px;
+}
+
+.hour-time {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.hour-temp {
+    font-size: 12px;
+    color: #d0d0d0;
+}
+
+@media (max-width: 1024px) {
+    .outerSquare {
+      width: 400px;
+      height: 400px;
+      margin-top: 50px;
+    }
+  
+    .innerSquare {
+      width: 280px;
+      height: 330px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .outerSquare {
+      width: 90%;
+      height: auto;
+      margin-top: 20px;
+    }
+  
+    .innerSquare {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .hourly-forecast {
+      display: flex; 
+      flex-direction: row; 
+      overflow-x: auto; 
+      margin-top: 10px;
+    }
+  
+    .hour {
+      margin-left: 0;
+      margin-right: 10px; 
+      flex: 1; 
+      text-align: center;
+    }
+  
+    .hour:last-child {
+      margin-right: 0;
+    }
+  }
